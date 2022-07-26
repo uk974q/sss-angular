@@ -1,0 +1,15 @@
+<div *ngIf="showDetails" class="card-container">
+    <h1 class="card-title">{{details["name"]}}</h1>
+    <div class="details">
+      <!-- <div>Name : {{details["name"]}}</div>
+      <div>Phone : {{details["phone"]}}</div>
+      <div>Email : {{details["email"]}}</div>
+      <div>Address : {{details["address"]["street"]}}</div> -->
+      <div class="label-group" *ngFor="let item of keys">
+        <label>{{item}} : </label>
+        <div class="label-value">{{details[item]}}</div>
+      </div>
+    </div>
+    <a class="back-button" routerLink="/users">Go back to Users</a>
+  </div>
+  

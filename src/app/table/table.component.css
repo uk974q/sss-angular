@@ -1,0 +1,29 @@
+.user-table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  th, td{
+    text-align: center;
+    padding: 15px;
+  }
+  th{
+    background-color: lightsalmon
+  }
+  tr{
+    cursor: pointer;
+  }
+  tr:nth-child(even){
+    background-color: lightblue;
+  }
+  tr:hover{
+    background-color: lightcoral;
+  }
+  tr .link{
+    text-decoration: underline;
+  }
+  td.link:hover{
+    background-color: blue;
+    color: whitesmoke;
+  }
+  
